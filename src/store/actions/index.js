@@ -1,0 +1,2 @@
+
+export const IS_COLLAPSED = 'IS_COLLAPSED'

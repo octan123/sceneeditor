@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "targets": { "chrome": "83" } }],
+    ["@babel/preset-react", { "loose": true }]
+  ],
+  "plugins": [
+    "syntax-dynamic-import",
+    ["import", { "libraryName": "antd", "libraryDirectory": "lib" }],
+    "@babel/proposal-class-properties"
+  ]
+}

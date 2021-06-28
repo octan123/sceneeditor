@@ -1,0 +1,177 @@
+.cust-tabs {
+  .ant-tabs-tab+.ant-tabs-tab {
+    margin-left: 16px;
+  }
+}
+.scenes-edit-page {
+  .toolbox {
+    .ant-layout-sider-children {
+      display: flex;
+      flex-direction: column;
+      .card-edit-scenes {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        .ant-card-body {
+          flex: 1;
+        }
+        .ant-card-actions {
+          li {
+            margin: 0;
+          }
+          .ant-btn-block {
+            height: 48px;
+          }
+        }
+      }
+    }
+  }
+  .info-panel {
+    flex: 0 0 500px !important;
+    max-width: inherit !important;
+    &>.ant-layout-sider-children {
+      overflow: auto;
+    }
+    .ant-form-item-control-input-content {
+      display: flex;
+    }
+  }
+  .map-container {
+    .info-pop {
+      width: 280px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px 15px 0;
+      height: 186px;
+      position: absolute;
+      .ant-input-number {
+        width: 40px;
+      }
+      .obstacle-form .obstacle-form-list-child {
+        padding-left: 0;
+      }
+      .arrow,
+      .arrow-up {
+        position: absolute;
+        left: 130px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #fff;
+      }
+      .arrow {
+        bottom: -10px;
+      }
+      .arrow-up {
+        top: -10px;
+        transform: rotate(180deg)
+      }
+    }
+    display: flex;
+    flex-direction: row;
+    .map-box {
+      flex: 1;
+      position: relative;
+    }
+    .can-h-resize {
+      width: 5px;
+      height: 100%;
+      background-color: #ccc;
+      cursor: ew-resize;
+      user-select: none;
+    }
+    .tool-box {
+      padding: 0 10px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      background-color: #fff;
+      width: 500px;
+      .create-scene-box {
+        padding: 15px 0;
+        border-bottom: 1px solid #ccc;
+        &:last-child {
+          border-bottom: none;
+        }
+        .cra-scene-list {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
+          .label {
+            width: 94px;
+            text-align: right;
+          }
+          .red {
+            color: red;
+          }
+        }
+      }
+      .trigger-list {
+        margin-bottom: 20px;
+        li {
+          padding-bottom: 10px;
+          list-style: none;
+          border-bottom: 1px solid #ccc;
+          margin-top: 10px;
+          .children {
+            margin-left: 20px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border-bottom: 1px dashed #eee;
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+          .ant-btn {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.obstacle-form {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .obstacle-form-list {
+    border-bottom: 1px solid #ddd;
+    padding-top: 10px;
+    &:nth-last-child(1) {
+      border-bottom: none;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    &-label {
+      margin-top: 6px;
+      float: left;
+    }
+    &-child {
+      padding-left: 10px;
+      display: flex;
+      .ant-form-item {
+        flex-direction: row;
+        margin-bottom: 16px;
+      }
+      .ant-input-number {
+        width: 60px;
+        margin-right: 16px;
+      }
+    }
+  }
+  .button-list {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+.obstacle-form2 {
+  .obstacle-form-list {
+    &-child {
+      .ant-input-number {
+        width: 100px;
+        margin-right: 16px;
+      }
+    }
+  }
+}
